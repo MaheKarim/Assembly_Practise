@@ -2,7 +2,7 @@ EMU8086 GENERATED LISTING. MACHINE CODE <- SOURCE.
  
 User_Input_Output.exe -- emu8086 assembler version: 4.08  
  
-[ 14-May-19  --  4:49:01 PM ] 
+[ 14-May-19  --  5:01:47 PM ] 
  
 ===================================================================================================
 [LINE]     LOC: MACHINE CODE                          SOURCE
@@ -29,16 +29,16 @@ User_Input_Output.exe -- emu8086 assembler version: 4.08
 [  19]    020A: CD 21                                 INT 21H
 [  20]        :                                       
 [  21]        :                                       
-[  22]    020C:                                       EXIT:
+[  22]        :                                       ;EXIT:
 [  23]        :                                       
 [  24]    020C: B4 4C                                 MOV AH, 4CH
 [  25]    020E: CD 21                                 INT 21H
 [  26]        :                                       
 [  27]        :                                       
-[  28]        :                                       MAIN ENDP
+[  28]        :                                       ;MAIN ENDP
 [  29]        :                                       
 [  30]        :                                       
-[  31]        :                                       END MAIN ;EXIT
+[  31]        :                                       ; END MAIN ;EXIT
 [  32]        :                                       
  
 ===================================================================================================
