@@ -25,10 +25,11 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     
 
     ADD BH, BL                             ; add functionality
-    SUB BH, 30H                            ; sub assembler value when we do add
+    SUB BH, 30H                            ; sub assembler value when we do add 
+                                           ; now value store in BH
     
 
-    SUB BH, CH                             ; subtract functionality
+    SUB BH, CH                             ; subtract functionality (BH - CH)
     ADD BH, 30H                            ; add assembler value when we do sub
     
     
