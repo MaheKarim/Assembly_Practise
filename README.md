@@ -12,6 +12,8 @@ Microprocessor And Assembly Programming Practise - CSE 231 and CSE 232 (LAB) | L
 ✔ Excellent Tutorial from JBWYATT [Link Here](https://jbwyatt.com/253/emu/) <br>
 ✔ Assembly Tutorial [Link Here](http://faculty.kfupm.edu.sa/COE/shazli/coe205/Help/) <br>
 ✔ The Art Of Assembly Language [Link Here](http://www.plantation-productions.com/Webster/www.artofasm.com/index.html) <br>
+✔ x86 Reference Guide [Link Here](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html) <br>
+✔ NASAM Assembly Language [Link Here](https://asmtutor.com/) <br>
 
 
 
