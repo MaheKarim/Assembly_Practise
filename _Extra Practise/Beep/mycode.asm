@@ -5,9 +5,7 @@ INCLUDE "EMU8086.INC"
 .CODE 
 
          MAIN PROC
-
-
-                                
+           
          MOV DL, 007                        ; PRINT Dl REG AND BEEP CODE ASCII VALUE
          MOV AH, 2                          ; PRINT OUTPUT
          INT 21H                            ; INTERUPT DOS
