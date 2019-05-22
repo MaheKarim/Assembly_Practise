@@ -1,15 +1,15 @@
-INCLUDE "EMU8086.INC"
+INCLUDE "EMU8086.INC"                     ; emu8086 helper added
 
 .MODEL SMALL
 .STACK 100H
 .CODE
-
-   MAIN PROC
+                                         
+   MAIN PROC                              ; main procedure start
     
     
     PRINT "ENTER YOUR FIRST VALUE: "
     MOV AH, 1
-    INT 21H
+    INT 21H                               ; call the interrupt handler 0x21
     MOV BH, AL
     
     PRINTN
@@ -18,17 +18,18 @@ INCLUDE "EMU8086.INC"
     MOV BL, AL
     
     PRINTN
-    PRINT "ENTER YPUR THIRD VALUE: "   
+    PRINT "ENTER YOUR THIRD VALUE: "   
     INT 21H
     MOV CH, AL
     
-    ADD BH, BL
+    ADD BH, BL                             ; add functionality
     SUB BH, 30H
     
-    SUB BH, CH
+    SUB BH, CH                             ; subtract functionality
     ADD BH, 30H
     
     
+    PRINTN                                 ; new line printer
     PRINT "THE RESULT OF (A+B)-C IS : "
     MOV AH, 2
     MOV DL, BH
@@ -39,6 +40,6 @@ INCLUDE "EMU8086.INC"
     INT 21H
     
     
-    MAIN ENDP
+    MAIN ENDP                              ;end of program 
    
-   END MAIN
+   END MAIN                                ; entry point for linker use
