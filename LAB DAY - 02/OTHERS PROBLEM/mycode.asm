@@ -38,7 +38,7 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     INT 21H
     
     
-    MOV AX, 4C00H                          ; return 0
+    MOV AH, 4CH                          ; return 0 / terminate programme
     INT 21H
     
     
