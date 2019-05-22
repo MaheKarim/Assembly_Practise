@@ -9,7 +9,8 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     
     PRINT "ENTER YOUR FIRST VALUE: "
     MOV AH, 01H                           ; input a character
-    INT 21H                               ; call the interrupt handler 0x21
+    INT 21H                               ; "     "     "
+
     MOV BH, AL                            ; first value store BH
     
     PRINTN
