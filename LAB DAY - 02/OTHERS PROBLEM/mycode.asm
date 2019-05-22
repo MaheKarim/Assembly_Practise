@@ -8,7 +8,7 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     
     
     PRINT "ENTER YOUR FIRST VALUE: "
-    MOV AH, 1
+    MOV AH, 01H                           ; input a character
     INT 21H                               ; call the interrupt handler 0x21
     MOV BH, AL                            ; first value store BH
     
@@ -33,14 +33,14 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     
     PRINTN                                 ; new line printer
     PRINT "THE RESULT OF (A+B)-C IS : "
-    MOV AH, 2
-    MOV DL, BH
+    MOV AH, 2                              ; instruction for print out
+    MOV DL, BH                             ; our ans store on BH and dl use for print ans
     INT 21H
     
     
-    MOV AH, 4CH                          ; return 0 / terminate programme
+    MOV AH, 4CH                             ; return 0 / terminate programme
     INT 21H
     
     
     MAIN ENDP                              ;end of program 
-    END MAIN                                ; entry point for linker use
+    END MAIN                               ; entry point for linker use
