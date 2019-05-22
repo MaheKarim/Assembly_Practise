@@ -1,38 +1,39 @@
-INCLUDE "EMU8086.INC"
-.MODEL SMALL   
+INCLUDE "EMU8086.INC"                               ; helper file added
+.MODEL SMALL                                        ; model decalre
 .STACK 100H
-.CODE
+.CODE                                               ; code segment start
 
 MAIN PROC
     
-    PRINT "ENTER YOUR FIRST VALUE: "  
-    MOV AH, 1
-    INT 21H
-    MOV BH, AL
+    PRINT "ENTER YOUR FIRST VALUE: "                 ; if we declare emu8086 then we can use
+    MOV AH, 01H                                      ; new chracter input
+    INT 21H                                          ; after new chracter input we have to use
+    MOV BH, AL                                       ; value store on BH destination 
     
     
-    PRINTN
+    PRINTN                                           ; new line help with emu8086 helper
     PRINT "ENTER YOUR SECONED VALUE: "
     INT 21H
-    MOV BL, AL
+    MOV BL, AL                                       ; seconed value store on BL
     
     
-    ADD BH, BL
-    SUB BH, 30H
+    ADD BH, BL                                       ; add those (BH + BL)
+    SUB BH, 30H                                      ; sub assembler value
+
     
     PRINTN
     PRINT "THE RESULT IS: "
     
-    MOV AH, 2
+    MOV AH, 2                                        ; instuctions for print
     MOV DL, BH  
-    INT 21H
+    INT 21H                                          ; instruncion end
     
     
  
- MOV AX, 4C00H
- INT 21H
+   MOV AX, 4C00H                                      ; DOS function: Exit program 
+   INT 21H                                            ; Call DOS: Terminate program 
  
  
- MAIN ENDP
-END MAIN
+  MAIN ENDP                                           ;end of program 
+  END MAIN
     
