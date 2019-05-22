@@ -3,3 +3,11 @@ Microprocessor And Assembly Programming Practise - CSE 231 and CSE 232 (LAB) | L
 </br> Daffodil International University 
 
 <hr> 
+
+# Some Usefull Links:
+
+✔ DOS Interrupts [Link Here](https://www.csc.depauw.edu/~bhoward/asmtut/asmtut12.html)
+✔ DOS INT 21h - DOS Function Codes [Link Here](http://spike.scu.edu.au/~barry/interrupts.html)
+✔ EMU8086.INC Library [Link Here](https://jbwyatt.com/253/emu/asm_tutorial_05.html)
+✔ Excellent Tutorial from JBWYATT [Link Here](https://jbwyatt.com/253/emu/)
+
