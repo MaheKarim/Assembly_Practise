@@ -1,0 +1,38 @@
+INCLUDE "EMU8086.INC"
+.MODEL SMALL   
+.STACK 100H
+.CODE
+
+MAIN PROC
+    
+    PRINT "ENTER YOUR FIRST VALUE: "  
+    MOV AH, 1
+    INT 21H
+    MOV BH, AL
+    
+    
+    PRINTN
+    PRINT "ENTER YOUR SECONED VALUE: "
+    INT 21H
+    MOV BL, AL
+    
+    
+    ADD BH, BL
+    SUB BH, 30H
+    
+    PRINTN
+    PRINT "THE RESULT IS: "
+    
+    MOV AH, 2
+    MOV DL, BH  
+    INT 21H
+    
+    
+ 
+ MOV AX, 4C00H
+ INT 21H
+ 
+ 
+ MAIN ENDP
+END MAIN
+    
