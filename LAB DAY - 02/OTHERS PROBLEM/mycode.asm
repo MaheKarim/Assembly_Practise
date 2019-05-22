@@ -39,8 +39,8 @@ INCLUDE "EMU8086.INC"                     ; emu8086 helper added
     INT 21H
     
     
-    MOV AH, 4CH                             ; return 0 / terminate programme
-    INT 21H
+    MOV AH, 4CH                             ; DOS function: Exit program 
+    INT 21H                                 ; Call DOS: Terminate program 
     
     
     MAIN ENDP                              ;end of program 
