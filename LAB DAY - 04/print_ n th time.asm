@@ -1,0 +1,18 @@
+INCLUDE "EMU8086.INC"
+.MODEL SMALL
+.STACK 100H
+.CODE
+
+MAIN PROC
+
+
+   MOV CX, 20
+   MOV AH, 2
+   MOV DL, '*'
+   
+   UP:
+   INT 21H
+   LOOP UP
+
+
+EXIT:
