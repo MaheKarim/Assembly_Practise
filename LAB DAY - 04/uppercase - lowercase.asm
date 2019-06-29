@@ -1,0 +1,42 @@
+INCLUDE "EMU8086.INC"
+.MODEL SMALL
+.STACK 100H
+.CODE
+
+MAIN PROC
+
+
+
+     PRINT "INPUT A NEW CHARACTER:  "
+
+MOV AH, 1
+INT 21H
+MOV BL, AL
+
+
+CMP BL, "a"
+JNGE EXIT
+CMP BL, "z"
+JNLE EXIT
+ PRINTN 
+ PRINT "YOUR CASE  : IS LOWER CASE!"             
+ EXIT: 
+ 
+     
+
+
+
+CMP BL, "A"
+JNGE PIKO
+CMP BL, "Z"
+JNLE PIKO
+
+              
+              
+
+PRINTN 
+PRINT "YOUR CASE  : IS UPPER CASE!"
+
+
+
+PIKO:
